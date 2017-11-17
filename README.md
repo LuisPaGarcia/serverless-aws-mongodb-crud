@@ -1,2 +1,27 @@
-# serverless-aws-mongodb-crud
-Serverless REST API with MongoDB using AWS, MLAB, Mongoose, Bluebird and Angularjs to test it
+# Serverless REST API with MongoDB using AWS, MLAB, Mongoose, Bluebird and Angularjs to test it
+
+This example demonstrate how to use a MongoDB database with aws and serverless, can be tested with anglarjs.
+
+Using Mongoose ODM and Bluebird for Promises.
+
+## Use Cases
+
+- NoSQL CRUD API
+
+## Setup
+
+Setup your aws credentials: [YouTube Video [4 min]](https://www.youtube.com/watch?v=tgb_MRVylWw)
+
+Add your MongoDB url in .env file (You can get a free one on [mlab.com](https://mlab.com))
+
+```
+npm install
+serverless deploy
+```
+
+Replace
+
+
+## Usage
+
+open index.html in your browser and see the basic crud operations
