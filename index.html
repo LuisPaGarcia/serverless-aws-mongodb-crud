@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Serverless view</title>
+</head>
+<body ng-app="app" ng-controller="cont1" style="background-color:black;color:white; font-family: Arial, sans-serif" font-size:20px;>
+<h1>  Visible: {{visible}}</h1>
+<div ng-hide="visible">
+  <h1>Please fill the Serverless endpoints on app.js</h1>
+</div>
+<div ng-hide="!visible">
+  <h2>GET -All the data</h2>
+  <h3 ng-hide="data.lenght != 0">Loading</h3>
+  <p ng-hide="data.lenght == 0" ng-repeat="d in data" ng-click="assign(d._id)" style="cursor:pointer">
+    {{d}}
+  </p>
+  <h2>POST - New User</h2>
+  <form>
+    <input id="name" type="text" ng-model="name" placeholder="Name">
+    <input type="text" ng-model="firstname" placeholder="Firstname">
+    <input type="text" ng-model="city" placeholder="City">
+    <input type="date" ng-model="birth" placeholder="Date of Birth MM/DD/YYYY">
+    <input type="button" value="Add new user" ng-click="createUser(name,firstname,city,birth)">
+  </form>
+
+  <h2>DELETE - Delete user</h2>
+  <form>
+    <input type="text" ng-model="idToDelete" placeholder="id to delete" >
+    <input type="button" value="Delete user with this id" ng-click="deleteUser(idToDelete)">
+  </form>
+
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "angularjs-serverless-mongodb",
+  "version": "1.0.0",
+  "description": "Serverless REST API with MongoDB using AWS, MLAB, Mongoose, Bluebird and Angularjs to test it",
+  "main": "handler.js",
+  "scripts": {
+    "apideploy":"serverless deploy"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "dotenv": "^4.0.0",
+    "mongoose": "^4.9.6",
+    "validator": "^7.0.0"
+  },
+  "author": "Pauly Garcia <diganluispa@gmail.com>",
+  "license": "MIT"
+}
