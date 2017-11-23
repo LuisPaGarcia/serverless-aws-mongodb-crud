@@ -15,8 +15,9 @@ Setup your aws credentials: [See the video here](https://www.youtube.com/watch?v
 Add your MongoDB url in .env file (You can get a free one on mlab.com)
 
 ```
-npm install
-serverless deploy
+$ npm install
+$ serverless config credentials --provider aws --key YOUR_KEY --secret YOUR_SECRET
+$ serverless deploy
 ```
 
 Replace
