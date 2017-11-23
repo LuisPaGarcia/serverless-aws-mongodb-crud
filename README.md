@@ -10,7 +10,7 @@ Using Mongoose ODM and Bluebird for Promises.
 
 ## Setup
 
-Setup your aws credentials: [<i class="icon-refresh"></i> Synchronization](https://www.youtube.com/watch?v=tgb_MRVylWw)
+Setup your aws credentials: [See the video here](https://www.youtube.com/watch?v=tgb_MRVylWw)
 
 Add your MongoDB url in .env file (You can get a free one on mlab.com)
 
